@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ph-Tube</title>
+    <!-- daisy and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <header
+      class="max-w-[1440px] mx-auto px-5 md:px-12 lg:px-28 sticky z-10 top-0 left-0 bg-white"
+    >
+      <section
+        class="grid grid-cols-3 justify-between items-center py-6 border-b-2"
+      >
+        <div>
+          <img class="h-9" src="assets/Logo.png" alt="ph-tube logo" />
+        </div>
+        <div>
+          <form action="#">
+            <div
+              class="flex gap-2 items-center justify-center pl-1 pr-3 bg-[#c2c5cefb] py-1 rounded-lg"
+            >
+              <input
+                id="search"
+                class="px-2 py-1 outline-none rounded-lg text-lg w-full"
+                type="search"
+                placeholder="Search"
+              />
+              <i
+                id="search-icon"
+                class="fa-solid fa-magnifying-glass text-lg cursor-pointer"
+              ></i>
+            </div>
+          </form>
+        </div>
+        <div class="text-right">
+          <button
+            class="btn py-[10px] hover:bg-red-600 bg-[#FF1F3D] rounded-md text-white font-semibold text-lg px-8"
+          >
+            Blog
+          </button>
+        </div>
+      </section>
+      <!-- categories -->
+      <section
+        id="categories"
+        class="flex justify-center items-center gap-2 py-6"
+      >
+        <button
+          id="all-videos"
+          class="btn px-5 py-1 bg-[#FF1F3D] hover:text-white hover:bg-[#FF1F3D] rounded-md text-white text-base font-semibold"
+        >
+          All
+        </button>
+      </section>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-5 md:px-12 lg:px-28">
+      <section
+        id="all-video-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-5"
+      ></section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
